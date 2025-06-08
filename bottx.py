@@ -7,7 +7,7 @@ from telegram.ext import Application, CommandHandler, CallbackContext
 
 # Cấu hình bot
 BOT_CONFIG = {
-    'TOKEN': '8069437407:AAFqVxUgLemYg7_mr-OhSnmY89oThGCOc5k',
+    'TOKEN': '7752584378:AAGt2Ykue5Pj3XwgEoP62g0w9b6yLbr5pWo',
     'GROUP_ID': -1002538985524,
     'ADMIN_IDS': [7685822542,5976243149,6787623278,2142585996,7504852292],
 }
