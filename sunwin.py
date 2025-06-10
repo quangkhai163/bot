@@ -47,7 +47,7 @@ def on_message(ws, message):
                     model="gemini-2.5-flash-preview-04-17",
                     contents=f"Trò chơi có quy tắc như sau: Tung ngẫu nhiên cùng lúc cả 3 xúc xắc và tính tổng của 3 xúc xắc, nếu tổng lớn hơn 10 thì là 'Tài' còn ngược lại là 'Xỉu'.Giúp tôi dự đoán kết quả phiên tiếp theo dựa theo kết quả các phiên gần nhất: {str(ket_qua)}. Bạn chỉ cần trả lời tài hoặc xỉu, không cần gì thêm."
                 )
-                print(f"Dự đoán kết quả: {(response.text).replace('\n', '')}")
+                print(f"Dự đoán kết quả: {response.text.replace('\\n', '')}")
         if "gBB" in str(data) and data[1].get("cmd") == 1003:
             d1 = data[1].get("d1")
             d2 = data[1].get("d2")
